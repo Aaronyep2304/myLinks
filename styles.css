@@ -25,6 +25,7 @@ body {
   align-items: center;
 }
 
+
 /* --- TARJETA PRINCIPAL --- */
 .card {
   width: 90%;
@@ -53,7 +54,7 @@ body {
 
 /* --- BIO --- */
 .bio {
-  font-size: 300px;
+  font-size: 20px;
   color: #7c5cff;
   margin-top: 15px;
 }
@@ -61,7 +62,7 @@ body {
 
 /* --- CONTENEDOR DE ENLACES --- */
 .links {
-  margin-top: px;
+  margin-top: 20px;
   
 }
 
@@ -79,5 +80,58 @@ body {
   border-radius: 12px;
   transition: 0.3s;
   font-size: 25px;
+}
+
+@media (max-width: 375px) {
+  .card {
+    width: 95%;
+    padding: 20px 10px;
+  }
+
+  .avatar {
+    width: 180px;
+    height: 180px;
+  }
+
+  .name {
+    font-size: 28px;
+    margin-top: 15px;
+  }
+
+  .bio {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .link {
+    width: 100%;
+    font-size: 18px;
+    padding: 12px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    max-width: 700px;
+    padding: 50px 30px;
+  }
+
+  .avatar {
+    width: 300px;
+    height: 300px;
+  }
+
+  .name {
+    font-size: 48px;
+  }
+
+  .bio {
+    font-size: 22px;
+  }
+
+  .link {
+    width: 320px;
+    font-size: 22px;
+  }
 }
 
